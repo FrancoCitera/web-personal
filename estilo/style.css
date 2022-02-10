@@ -58,6 +58,10 @@ h2 {
     line-height : 80px;
 }
 
+.menu-index ul li:hover {
+    transform: scale(1.02);
+}
+
 .menu-index {
     margin: 20px;
     display: flex;
@@ -68,6 +72,10 @@ h2 {
 
 .nav-index ul li a {
     font-size: 35px;
+}
+
+.nav-index ul li:hover {
+    transform: scale(1.02);
 }
 
 .menu-index, .nav-index {
