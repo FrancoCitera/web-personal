@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler&display=swap');
+
+/* font-family: 'Brawler', serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #FBFBFD;
+    font-family: 'Brawler', serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+/* Encabezados y Menús */
+
+header {
+    border-bottom: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.nav-index {
+    width: 55%;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+h1 a {
+    font-size: 60px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+.banner {
+    width: 300px;
+}
+
+.menu-index ul li a {
+    font-size: 60px;
+    line-height : 80px;
+}
+
+.menu-index {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 450px;
+}
+
+.nav-index ul li a {
+    font-size: 35px;
+}
+
+.menu-index, .nav-index {
+    text-shadow: 1px 1px #c2c2c2, 2px 2px #d7d7d7, 3px 3px rgb(186, 186, 186);
+}
+
+/* Fin Encabezados */
+
+/* Listas y Enlaces */
+
+li {
+    list-style-type: none;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+    font-size: 25px; 
+}
+
+/* Fin listas y Enlaces */
+
+/* Main */
+
+main {
+    grid-area: main;
+}
+
+/* Fin Main */
+
+/* Música */
+
+.seccion-musica {
+    display: flex;
+    align-items: flex-start;
+}
+
+.canciones ul li a img {
+    width: 85%;
+    height: auto;  
+}
+
+.canciones ul li a:hover {
+    transform: scale(0.99);
+    transition: all 0.2s;
+}
+
+.canciones ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.canciones ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.tapa-cancion {
+    width: 60%;
+}
+
+.reproductor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 100px;
+}
+
+.letra {
+    line-height: 1.6;
+    white-space: pre;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    left: -70px;
+}
+
+/* Fin música */
+
+/* Videos */
+
+.seccion-videos {
+    display: flex;
+    align-items: flex-start;
+}
+
+.videos p {
+    font-size: 25px;
+    margin: 30px;
+}
+
+/* Fin videos */
+
+/* Producción */
+
+iframe {
+    width: 100%;
+}
+
+/* Fin producción */
+
+/* Footer */
+
+footer {
+    border-top: 3px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+}
+
+.footer {
+    width: 30%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/* Fin Footer */
+
+/* Media Query - Tablet */
+
+@media screen and (max-width: 1100px) {
+    
+    /* Encabezados y Menús */
+
+    .banner {
+        display: none;
+    }
+
+    header {
+        border-bottom: 3px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .secciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .nav-index ul li a {
+        font-size: 25px;
+    }
+
+    /* Fin Encabezados */
+
+    /* Música */
+
+    .canciones ul {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-left: 45px;
+        margin-bottom: 10px;
+    }
+
+    /* Fin Música */
+
+    /* Footer */
+
+    .redes li a img {
+        width: 100%;
+    }
+
+    /* Fin Footer */
+}
+
+/* Fin Media Query - Tablet */
+
+/* Media Query - Mobile */
+
+@media screen and (max-width: 420px) {
+
+    /* Encabezados y Menús */
+
+    .banner {
+        display: none;
+    }
+
+    h1 a {
+        font-size: 53px;
+    }
+
+    .menu-index ul li a {
+        font-size: 53px;
+        line-height : 80px;
+    }
+
+    .menu-index {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 250px;
+    }
+
+    header {
+        border-bottom: 3px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        grid-area: header;
+    }
+
+    .secciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .nav-index ul li a {
+        font-size: 25px;
+    }
+
+    /* Fin Encabezados */
+
+    /* Música */
+
+    .canciones ul {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .canciones ul li a img {
+        width: 100%;
+    }
+
+    .titulo-cancion {
+        margin: 8px 0px 0px 25px
+    }
+
+    .tapa-cancion {
+        width: 100%;
+        height: auto; 
+    }
+
+    .reproductor {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    audio {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .letra {
+        line-height: 1.6;
+        white-space: pre;
+        font-size: 18px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-left: -65px;
+    }
+
+    /* Fin Música */
+
+    /* Videos */
+
+    .videos p {
+        font-size: 20px;
+        margin: 10px 10px 10px 25px
+    }
+
+    /* Fin Videos */
+
+    /* Footer */
+
+    footer {
+        border-top: 3px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        grid-area: footer;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        margin: 20px
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 45px;
+        width: 250%;
+    }
+
+    /* Fin Footer */
+}
+
+/* Fin Media Query - Mobile */
