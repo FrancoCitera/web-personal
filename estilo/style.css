@@ -19,6 +19,10 @@ body {
 
 /* Encabezados y Menús */
 
+header {
+    grid-area: header;
+}
+
 h2 {
     font-size: 30px;
     margin: 20px 0px 20px 0px;
@@ -124,23 +128,13 @@ main {
 }
 
 .tapa-cancion {
-    width: 60%;
-}
-
-.reproductor {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 100px;
+    width: 100%;
 }
 
 .letra {
     line-height: 1.6;
     white-space: pre;
     font-size: 20px;
-    position: relative;
-    top: -40px;
-    left: -70px;
 }
 
 /* Fin música */
