@@ -80,6 +80,10 @@ a {
     font-size: 25px; 
 }
 
+a:hover {
+    color: black;
+}
+
 ul {
     padding: 0px;
 }
@@ -160,6 +164,51 @@ iframe {
 }
 
 /* Fin producción */
+
+/* Contacto */
+
+.contacto {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 300px;
+    padding: 20px;
+}
+
+.cuadro {
+    border: 1px solid black;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.cuadro label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.cuadro input, .cuadro textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.boton {
+    display: block;
+    background-color: blue;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+
+/* Fin Contacto */
 
 /* Footer */
 
