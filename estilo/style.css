@@ -133,6 +133,7 @@ main {
 
 .tapa-cancion {
     width: 100%;
+    margin-top: 40px;
 }
 
 .letra {
@@ -295,6 +296,11 @@ footer p {
 
     /* Música */
 
+    .container {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .canciones {
         display: grid;
         grid-template-rows: repeat(1, 1fr);
@@ -313,15 +319,8 @@ footer p {
 
     .tapa-cancion {
         width: 100%;
-        height: auto; 
-    }
-
-    .reproductor {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: start;
-        margin: 0px;
+        height: auto;
+        margin-top: 0px;
     }
 
     h2 {
