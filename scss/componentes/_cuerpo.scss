@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Brawler&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #FBFBFD;
+	font-family: 'Brawler', serif;
+	display: grid;
+	grid-template-areas: 'header' 'main' 'footer';
+}
