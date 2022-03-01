@@ -1,3 +1,5 @@
+@import '../base/extends';
+
 .seccion-musica {
 	display: flex;
 	align-items: flex-start;
@@ -19,12 +21,7 @@
 			font-size: 20px;
 		}
 	}
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
-	margin-left: 50px;
-	margin-bottom: 10px;
+	@extend %grilla;
 }
 .tapa-cancion {
 	width: 100%;
